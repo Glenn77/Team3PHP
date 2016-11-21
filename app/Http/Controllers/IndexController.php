@@ -22,26 +22,13 @@ class IndexController extends Controller
         $res = $client->get($url);
 
         if($res->getStatusCode() != 200)
-            return view('pages.index', array('dienstRegeling' => 'error'));
+            return view('pages.index', array('error' => true));
 
 
             $body = json_decode($res->getBody());
             $dienstRegeling = $body->connection;
 
-            return view('pages.index', array('dienstRegelingen' => $dienstRegeling));
-
-
-
-//
-//        echo $res->getStatusCode();
-//// 200
-//        echo $res->getHeaderLine('content-type');
-//// 'application/json; charset=utf8'
-//        echo $res->getBody();
-//// '{"id": 1420053, "name": "guzzle", ...}'
-
-
-        return response()->json($request);
+            return view('pages.index', array('error' => false, 'dienstRegelingen' => $dienstRegeling));
     }
 
     public function show()

@@ -14,9 +14,8 @@
 Route::get('/', 'IndexController@show');
 Route::post('/', 'IndexController@getDienstRegeling');
 
-Route::get('/stations', function () {
-    return view('pages.stations');
-});
+Route::get('/stations', 'StationsController@show');
+Route::post('/stations', 'StationsController@getStationOrStation');
 
 
 //Route::get('/', function () {
