@@ -9,18 +9,25 @@
             {{ Form::token() }}
             <div class="row">
                 <div class="col-sm-2">{{ Form::label('From', 'From') }}</div>
-                <div class="col-sm-4">{{ Form::text('From', 'Groenendael') }}</div>
-                <div class="col-sm-2">{{ Form::label('Date', 'Date') }}</div>
-                <div class="col-sm-4">{{ Form::date('Date', \Carbon\Carbon::now()) }}</div>
+                <div class="col-sm-8">{{ Form::text('From', 'Groenendael') }}</div>
             </div>
             <div class="row">
                 <div class="col-sm-2">{{ Form::label('To', 'To') }}</div>
-                <div class="col-sm-4">{{ Form::text('To', 'Kiewit') }}</div>
-                <div class="col-sm-2">{{ Form::label('Time', 'Time') }}</div>
-                <div class="col-sm-4">{{ Form::text('Time', \Carbon\Carbon::now('Europe/Brussels')->format('H:i')) }}</div>
+                <div class="col-sm-8">{{ Form::text('To', 'Kiewit') }}</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-sm-2">{{ Form::label('Date', 'Date') }}</div>
+                <div class="col-sm-6">{{ Form::date('Date', \Carbon\Carbon::now()) }}</div>
+                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'ARR', true) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
             </div>
             <div class="row">
-                <div class="col-sm-2 col-sm-offset-10 col-xs-12">
+                <div class="col-sm-2">{{ Form::label('Time', 'Time') }}</div>
+                <div class="col-sm-6">{{ Form::text('Time', \Carbon\Carbon::now('Europe/Brussels')->format('H:i')) }}</div>
+                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'DEP', false) }} {{ Form::label('TimeSel', 'Depart') }}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
                     {{ Form::submit('Search') }}
                 </div>
             </div>

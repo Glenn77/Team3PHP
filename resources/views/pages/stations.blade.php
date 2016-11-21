@@ -8,27 +8,23 @@
             {{ Form::open(['url' => '/stations']) }}
             {{ Form::token() }}
             <div class="row">
-                <div class="col-sm-3 radio-align">{{ Form::radio('SearchType', 'Station', true) }} {{ Form::label('SearchType', 'Station') }}</div>
-                <div class="col-sm-3 radio-align">{{ Form::radio('SearchType', 'Trein', false) }} {{ Form::label('SearchType', 'Trein') }}</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">{{ Form::label('Name', 'Station/Trein') }}</div>
-                <div class="col-sm-4">{{ Form::text('Name', 'Groenendael') }}</div>
+                <div class="col-sm-2">{{ Form::label('Name', 'Station') }}</div>
+                <div class="col-sm-8">{{ Form::text('Name', 'Groenendael') }}</div>
             </div>
             <div class="row">
                 <div class="col-sm-2">{{ Form::label('Date', 'Datum') }}</div>
-                <div class="col-sm-4">{{ Form::date('Date', \Carbon\Carbon::now()) }}</div>
+                <div class="col-sm-6">{{ Form::date('Date', \Carbon\Carbon::now()) }}</div>
+                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'ARR', true) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
             </div>
             <div class="row">
                 <div class="col-sm-2">{{ Form::label('Time', 'Uur') }}</div>
-                <div class="col-sm-4">{{ Form::text('Time', \Carbon\Carbon::now()->format('H:i')) }}</div>
-                <div class="col-sm-3 radio-align">{{ Form::radio('TimeSel', 'ARR', true) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
-                <div class="col-sm-3 radio-align">{{ Form::radio('TimeSel', 'DEP', false) }} {{ Form::label('TimeSel', 'Depart') }}</div>
+                <div class="col-sm-6">{{ Form::text('Time', \Carbon\Carbon::now()->format('H:i')) }}</div>
+                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'DEP', false) }} {{ Form::label('TimeSel', 'Depart') }}</div>
             </div>
 
 
             <div class="row">
-                <div class="col-sm-2 col-sm-offset-10 col-xs-12">
+                <div class="col-xs-8 col-xs-offset-2">
                     {{ Form::submit('Search') }}
                 </div>
             </div>

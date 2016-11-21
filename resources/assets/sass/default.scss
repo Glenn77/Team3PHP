@@ -79,7 +79,7 @@ h2{
 
   input {
     height: 2em;
-    width: 70%;
+    width: 100%;
 
     &[type=date] {
       height: 2em;
@@ -89,7 +89,7 @@ h2{
     }
 
     &[type=submit] {
-      width: auto;
+
 
       &:disabled {
         opacity: .7;
