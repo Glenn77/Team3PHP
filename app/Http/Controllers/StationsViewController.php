@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StationsController extends Controller
+class StationsViewController extends Controller
 {
-    public function getStationOrStation(Request $request)
+    public function getStation(Request $request)
     {
 
         //https://api.irail.be/connections/?to={station1}&from={station2} (OPTIONAL:) &date={dmy}&time=2359&timeSel=arrive or depart
@@ -17,8 +17,7 @@ class StationsController extends Controller
 
         $url = "https://api.irail.be/liveboard/?format=json";
 
-        if ($request->SearchType == "Station")
-            $url .= "&station=" . $request->Name;
+        $url .= "&station=" . $request->Name;
 
         if (isset($request->Date))
             $url .= "&date=" . $date;
@@ -39,9 +38,9 @@ class StationsController extends Controller
 
         $body = json_decode($res->getBody());
         $station = $body->stationinfo;
-        $arrivals = $body->arrivals;
+        $departures = $body->departures;
 
-        return view('pages.index', array('error' => false, 'station' => $station, 'arrivals' => $arrivals));
+        return view('pages.stations', array('error' => false, 'station' => $station, 'departures' => $departures));
 
     }
 

@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', 'IndexController@show');
-Route::post('/', 'IndexController@getDienstRegeling');
+Route::get('/', 'IndexViewController@show');
+Route::post('/', 'IndexViewController@getDienstRegeling');
 
-Route::get('/stations', 'StationsController@show');
-Route::post('/stations', 'StationsController@getStationOrStation');
+Route::get('/stations', 'StationsViewController@show');
+Route::post('/stations', 'StationsViewController@getStation');
+
+Route::get('/trains', 'TrainsViewController@show');
+Route::post('/trains', 'TrainsViewController@getTrain');
 
 
 //Route::get('/', function () {

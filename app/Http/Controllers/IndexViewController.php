@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class IndexViewController extends Controller
 {
     public function getDienstRegeling(Request $request)
     {
@@ -16,7 +16,7 @@ class IndexController extends Controller
         $time = str_replace(':', '', $request->Time);
 
 
-        $url = sprintf('https://api.irail.be/connections/?format=json&to=%s&from=%s&date=%s&time=%s', $request->To, $request->From, $date, $time);
+        $url = sprintf('https://api.irail.be/connections/?format=json&to=%s&from=%s&date=%s&time=%s&timeSel=%s', $request->To, $request->From, $date, $time, $request->TimeSel);
 
         $client = new \GuzzleHttp\Client();
         $res = $client->get($url);
