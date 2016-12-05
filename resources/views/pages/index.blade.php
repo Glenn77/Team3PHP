@@ -1,41 +1,48 @@
 @extends('layouts.default')
 @section('title', 'NMBSTeam WebApp')
 @section('content')
-    <h2>Dienstregeling</h2>
 
-    <div class="container">
-        <div class="search-form row">
-            {{ Form::open(['url' => '/']) }}
-            {{ Form::token() }}
-            <div class="row">
-                <div class="col-sm-2">{{ Form::label('From', 'From') }}</div>
-                <div class="col-sm-8">{{ Form::text('From', 'Groenendael', ['required' => true]) }}</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">{{ Form::label('To', 'To', ['required' => true]) }}</div>
-                <div class="col-sm-8">{{ Form::text('To', 'Kiewit') }}</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">{{ Form::label('Date', 'Date') }}</div>
-                <div class="col-sm-6">{{ Form::date('Date', \Carbon\Carbon::now()), ['required' => true] }}</div>
-                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'depart', true) }} {{ Form::label('TimeSel', 'Depart') }}</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">{{ Form::label('Time', 'Time') }}</div>
-                <div class="col-sm-6">{{ Form::text('Time', \Carbon\Carbon::now('Europe/Brussels')->format('H:i')), ['required' => true] }}</div>
-                <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'arrival', false) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
-            </div>
-            <br/>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
-                    {{ Form::submit('Search') }}
+    <div class="header_title row">
+        <h1>Dienstregeling</h1>
+    </div>
+
+    <div class="header_form row">
+        <div class="container">
+            <div class="search-form row">
+                {{ Form::open(['url' => '/']) }}
+                {{ Form::token() }}
+                <div class="row">
+                    <div class="col-sm-2">{{ Form::label('From', 'From') }}</div>
+                    <div class="col-sm-8">{{ Form::text('From', 'Groenendael', ['required' => true]) }}</div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-2">{{ Form::label('To', 'To', ['required' => true]) }}</div>
+                    <div class="col-sm-8">{{ Form::text('To', 'Kiewit') }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">{{ Form::label('Date', 'Date') }}</div>
+                    <div class="col-sm-6">{{ Form::date('Date', \Carbon\Carbon::now()), ['required' => true] }}</div>
+                    <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'depart', true) }} {{ Form::label('TimeSel', 'Depart') }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">{{ Form::label('Time', 'Time') }}</div>
+                    <div class="col-sm-6">{{ Form::text('Time', \Carbon\Carbon::now('Europe/Brussels')->format('H:i')), ['required' => true] }}</div>
+                    <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'arrival', false) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        {{ Form::submit('Search') }}
+                    </div>
+                </div>
+
+                {{ Form::close() }}
             </div>
-
-            {{ Form::close() }}
         </div>
+    </div>
 
-        <div class="search-results row">
+    <div class="search-results row">
+        <div class="container">
 
             @if(isset($error))
                 @if($error)
@@ -50,6 +57,7 @@
                                     <div class="title">
                                         <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true"
                                            href="#collapse_{{ $loop->index }}">
+
                                             <div class="title-primary row">
                                                 {{ date('H:i', $dienstRegeling->departure->time) }}
                                                 @if ($dienstRegeling->departure->delay != 0)
@@ -78,6 +86,7 @@
                                 <div id="collapse_{{ $loop->index }}"
                                      class="search-result-info collapse {{ $loop->index == 0 ? 'in': '' }}"
                                      role="tabpanel" aria-labelledby="heading_{{ $loop->index }}">
+
                                     <div class="card-block">
                                         <div class="departure row {{ ($dienstRegeling->departure->canceled != 0)? 'canceled' : '' }}">
                                             <div class="col-xs-2">{{ date('H:i', $dienstRegeling->departure->time) }}</div>
@@ -88,8 +97,9 @@
                                                     - {{ substr($dienstRegeling->departure->vehicle, strripos($dienstRegeling->departure->vehicle, '.')+1) }}
                                                 </div>
                                             </div>
-                                            <div class="col-xs-1"><span
-                                                        class="platform">{{ $dienstRegeling->departure->platform }}</span>
+                                            <div class="col-xs-1">
+                                                <span class="platform">{{ $dienstRegeling->departure->platform }}
+                                            </span>
                                             </div>
                                         </div>
 
@@ -107,8 +117,9 @@
                                                     <div class="col-xs-9">
                                                         {{ $via->stationinfo->standardname }}
                                                     </div>
-                                                    <div class="col-xs-1"><span
-                                                                class="platform">{{ $via->arrival->platform }}</span>
+                                                    <div class="col-xs-1">
+                                                        <span class="platform">{{ $via->arrival->platform }}
+                                                    </span>
                                                     </div>
                                                 </div>
 
@@ -141,8 +152,9 @@
                                                             @endif
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-1"><span
-                                                                class="platform">{{ $via->departure->platform }}</span>
+                                                    <div class="col-xs-1">
+                                                        <span class="platform">{{ $via->departure->platform }}
+                                                    </span>
                                                     </div>
                                                 </div>
 
@@ -154,8 +166,9 @@
                                             <div class="col-xs-9">
                                                 {{ $dienstRegeling->arrival->station }}
                                             </div>
-                                            <div class="col-xs-1"><span
-                                                        class="platform">{{ $dienstRegeling->arrival->platform }}</span>
+                                            <div class="col-xs-1">
+                                                <span class="platform">{{ $dienstRegeling->arrival->platform }}
+                                            </span>
                                             </div>
                                         </div>
 
