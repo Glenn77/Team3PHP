@@ -20,6 +20,7 @@ nav {
       max-height: 100px;
       height: 100%;
       width: auto;
+      max-width: 100px;
     }
   }
 
@@ -126,14 +127,25 @@ footer {
 
   .row {
     margin: 1em 0;
+    height: 2em;
 
     .col-sm-2 {
       text-align: right;
     }
 
-    .radio-align {
+    .radio-block {
       display: flex;
-      align-items: center;
+      align-content: flex-start;
+      flex-direction: column;
+      position: relative;
+      bottom: 3.5em;
+
+      &--item {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        margin: 0.5em 0;
+      }
 
       label, input[type="radio"] {
         margin: 0;
@@ -254,7 +266,24 @@ footer {
   }
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-sm-max) {
+
+  .navbar {
+    .left, .right {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    .left img {
+      max-height: 250px;
+      max-width: 250px;
+      height: 100%;
+      width: auto;
+    }
+  }
+  
   body {
     font-size: 2em;
     min-width: 480px;
@@ -265,11 +294,27 @@ footer {
 
     .row {
       margin: 1em 0;
+      height: auto;
+
+      .radio-block {
+        position: static;
+        margin-top: 2em;
+      }
+
+      &>.col-sm-2 {
+        text-align: left;
+      }
     }
+
+
 
     input {
       height: 2em;
       width: 100%;
+
+      &[type=radio] {
+        width: 5%;
+      }
 
       &[type=date] {
         height: 2em;
@@ -285,4 +330,44 @@ footer {
     }
   }
 
+  .search-results {
+
+    .search-result {
+
+      .canceled {
+
+        &::after {
+          padding-left: 2em;
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 590px) {
+
+  nav {
+    .right {
+      margin-top: 1em;
+
+      ul {
+        li {
+          display: block;
+
+          &.active {
+            border: 0;
+            background: $color-website-accent_1;
+            a {
+            color: white;
+            }
+          }
+          a {
+            padding: 1em;
+          }
+        }
+      }
+    }
+  }
 }

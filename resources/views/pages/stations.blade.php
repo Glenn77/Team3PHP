@@ -12,18 +12,26 @@
                 {{ Form::open(['url' => '/stations']) }}
                 {{ Form::token() }}
                 <div class="row">
-                    <div class="col-sm-2">{{ Form::label('Name', 'Station') }}</div>
-                    <div class="col-sm-8">{{ Form::text('Name', 'Groenendael', ['required' => true]) }}</div>
+                    <div class="col-md-2">{{ Form::label('Name', 'Station') }}</div>
+                    <div class="col-md-8">{{ Form::text('Name', 'Groenendael', ['required' => true]) }}</div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2">{{ Form::label('Date', 'Datum') }}</div>
-                    <div class="col-sm-6">{{ Form::date('Date', \Carbon\Carbon::now(), ['required' => true]) }}</div>
-                    <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'DEP', true) }} {{ Form::label('TimeSel', 'Depart') }}</div>
+                    <div class="col-md-2">{{ Form::label('Date', 'Datum') }}</div>
+                    <div class="col-md-6">{{ Form::date('Date', \Carbon\Carbon::now(), ['required' => true]) }}</div>
+                    <div class="col-md-2 radio-align"></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2">{{ Form::label('Time', 'Uur') }}</div>
-                    <div class="col-sm-6">{{ Form::text('Time', \Carbon\Carbon::now()->format('H:i'), ['required' => true]) }}</div>
-                    <div class="col-sm-2 radio-align">{{ Form::radio('TimeSel', 'ARR', false) }} {{ Form::label('TimeSel', 'Arrive') }}</div>
+                    <div class="col-md-2">{{ Form::label('Time', 'Uur') }}</div>
+                    <div class="col-md-6">{{ Form::text('Time', \Carbon\Carbon::now()->format('H:i'), ['required' => true]) }}</div>
+
+                    <div class="col-md-2 radio-block">
+                        <div class="radio-block--item">
+                            {{ Form::radio('TimeSel', 'DEP', true) }} {{ Form::label('TimeSel', 'Depart') }}
+                        </div>
+                        <div class="radio-block--item">
+                            {{ Form::radio('TimeSel', 'ARR', false) }} {{ Form::label('TimeSel', 'Arrive') }}
+                        </div>
+                    </div>
                 </div>
                 <br/>
                 <div class="row">

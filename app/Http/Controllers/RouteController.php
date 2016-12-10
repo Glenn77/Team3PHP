@@ -35,7 +35,8 @@ class RouteController extends Controller
 
         $route = Route::where('ArrivalStationID', '=', $arrivalStationID)
                         ->where('DepartureStationID', '=', $departureStationID)
-                        ->get();
+                        ->first();
+                        
 
 
         if(!empty($route) && $route->count())

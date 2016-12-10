@@ -48,7 +48,11 @@ class CustomerController extends Controller
         ) {
             $customer = new Customer();
             $railcard = new RailCard();
-            $customer->RailCardID = $railcard->RailCardID;
+
+            if (!$railcard->save())
+                return $this->beautifyReturnMessage('400', 'Railcard could not be saved');
+
+            $customer->RailCardID = $railcard->CardID;
             $customer->AddressID = $request->AddressID;
             $customer->FirstName = $request->FirstName;
             $customer->LastName = $request->LastName;

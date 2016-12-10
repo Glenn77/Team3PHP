@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\RequestException;
 
 class StationsViewController extends Controller
 {
     public function getStation(Request $request)
     {
-
-        //https://api.irail.be/connections/?to={station1}&from={station2} (OPTIONAL:) &date={dmy}&time=2359&timeSel=arrive or depart
 
         $dateArray = explode('-', $request->Date);
         $date = $dateArray[2] . $dateArray[1] . substr($dateArray[0], 2);
@@ -29,18 +28,20 @@ class StationsViewController extends Controller
 
 
 
-        $client = new \GuzzleHttp\Client();
-        $res = $client->get($url);
+        try {
+            $client = new \GuzzleHttp\Client();
+            $res = $client->get($url);
 
-        if($res->getStatusCode() != 200)
+            $body = json_decode($res->getBody());
+            $station = $body->stationinfo;
+            $departures = $body->departures;
+
+            return view('pages.stations', array('error' => false, 'station' => $station, 'departures' => $departures));
+
+        } catch (RequestException $e) {
             return view('pages.index', array('error' => true));
 
-
-        $body = json_decode($res->getBody());
-        $station = $body->stationinfo;
-        $departures = $body->departures;
-
-        return view('pages.stations', array('error' => false, 'station' => $station, 'departures' => $departures));
+        }
 
     }
 

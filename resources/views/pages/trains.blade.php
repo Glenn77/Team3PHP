@@ -12,8 +12,8 @@
                 {{ Form::open(['url' => '/trains']) }}
                 {{ Form::token() }}
                 <div class="row">
-                    <div class="col-sm-2">{{ Form::label('TreinID', 'Train ID') }}</div>
-                    <div class="col-sm-8">{{ Form::text('TreinID', 'S83964', ['required' => true]) }}</div>
+                    <div class="col-md-2">{{ Form::label('TreinID', 'Train ID') }}</div>
+                    <div class="col-md-8">{{ Form::text('TreinID', 'S83964', ['required' => true]) }}</div>
                 </div>
                 <br/>
                 <div class="row">

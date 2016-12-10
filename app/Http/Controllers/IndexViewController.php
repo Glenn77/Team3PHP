@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\RequestException;
 
 class IndexViewController extends Controller
 {
     public function getDienstRegeling(Request $request)
     {
-
-        //https://api.irail.be/connections/?to={station1}&from={station2} (OPTIONAL:) &date={dmy}&time=2359&timeSel=arrive or depart
 
         $dateArray = explode('-', $request->Date);
         $date = $dateArray[2] . $dateArray[1] . substr($dateArray[0], 2);
@@ -18,17 +17,21 @@ class IndexViewController extends Controller
 
         $url = sprintf('https://api.irail.be/connections/?format=json&to=%s&from=%s&date=%s&time=%s&timeSel=%s', $request->To, $request->From, $date, $time, $request->TimeSel);
 
-        $client = new \GuzzleHttp\Client();
-        $res = $client->get($url);
+        try
+        {
 
-        if($res->getStatusCode() != 200)
-            return view('pages.index', array('error' => true));
-
+            $client = new \GuzzleHttp\Client();
+            $res = $client->get($url);
 
             $body = json_decode($res->getBody());
             $dienstRegeling = $body->connection;
 
             return view('pages.index', array('error' => false, 'dienstRegelingen' => $dienstRegeling));
+
+        } catch (RequestException $e) {
+                return view('pages.index', array('error' => true));
+        }
+
     }
 
     public function show()

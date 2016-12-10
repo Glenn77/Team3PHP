@@ -11,16 +11,11 @@ class Pass extends Model
     protected $primaryKey = 'PassID';
     public $timestamps = false;
 
-    protected $hidden = ['RouteID', 'TypePassID'];
+    protected $hidden = ['TypePassID'];
     protected $guarded = ['PassID'];
-    protected $fillable = ['RouteID', 'TypePassID', 'Date', 'StartDate', 'ComfortClass'];
+    protected $fillable = ['TypePassID', 'Date', 'StartDate', 'ComfortClass'];
 
-    protected $appends = ['Route', 'TypePass'];
-
-    public function getRouteAttribute()
-    {
-        return Route::find($this->RouteID);
-    }
+    protected $appends = ['TypePass'];
 
     public function getTypePassAttribute()
     {

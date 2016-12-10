@@ -38,6 +38,7 @@ class TypePassController extends Controller
         ) {
             $typePass = new TypePass();
             $typePass->Name = $request->Name;
+            $typePass->Price = $request->Price;
 
             if ($typePass->save())
                 return $this->beautifyReturn(200, ['Extra' => 'Created', 'TypePassID' => $typePass->TypePassID]);
@@ -53,6 +54,8 @@ class TypePassController extends Controller
         if (!empty($typePass)) {
             if ($request->Name)
                 $typePass->Name = $request->Name;
+            if ($request->Price)
+                $typePass->Price = $request->Price;
 
             if ($typePass->save())
                 return $this->beautifyReturn(200, ['Extra' => 'Updated']);

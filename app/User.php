@@ -18,7 +18,7 @@ class User extends Authenticatable
 
     protected $hidden = ['AddressID', 'StationID', 'Password', 'remember_token', 'Api_token'];
     protected $guarded = ['StaffID'];
-    protected $fillable = ['FirstName', 'LastName', 'UserName', 'Password', 'Rights', 'BirthDate', 'Email', 'Api_token'];
+    protected $fillable = ['AddressID', 'StationID', 'FirstName', 'LastName', 'UserName', 'Password', 'Rights', 'BirthDate', 'Email', 'Api_token'];
 
     protected $appends = ['Address', 'Station'];
 
@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function getStationAttribute()
     {
-        return Address::find($this->StationID);
+        return StationWithAddress::find($this->StationID);
     }
 }

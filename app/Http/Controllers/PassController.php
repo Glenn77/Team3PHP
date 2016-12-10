@@ -34,14 +34,12 @@ class PassController extends Controller
 
     public function create(Request $request)
     {
-        if ($request->RouteID
-            && $request->TypePassID
+        if ($request->TypePassID
             && $request->Date
             && $request->StartDate
             && $request->ComfortClass
         ) {
             $pass = new Pass();
-            $pass->RouteID = $request->RouteID;
             $pass->TypePassID = $request->TypePassID;
             $pass->Date = $request->Date;
             $pass->StartDate = $request->StartDate;
@@ -59,8 +57,6 @@ class PassController extends Controller
     {
         $pass = Pass::find($id);
         if (!empty($pass)) {
-            if ($request->RouteID)
-                $pass->RouteID = $request->RouteID;
             if ($request->TypePassID)
                 $pass->TypePassID = $request->TypePassID;
             if ($request->Date)

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Carbon\Carbon;
+
+use GuzzleHttp\Exception\RequestException;
 
 class TrainsViewController extends Controller
 {
@@ -14,19 +15,20 @@ class TrainsViewController extends Controller
 
         $url = sprintf("https://api.irail.be/vehicle/?format=json&id=BE.NMBS.%s", $request->TreinID);
 
-        $client = new \GuzzleHttp\Client();
-        $res = $client->get($url);
+        try
+        {
+            $client = new \GuzzleHttp\Client();
+            $res = $client->get($url);
 
-        if($res->getStatusCode() != 200)
+            $body = json_decode($res->getBody());
+            $vehicleinfo = $body->vehicleinfo;
+            $stops = $body->stops;
+
+            return view('pages.trains', array('error' => false, 'vehicleinfo' => $vehicleinfo, 'stops' => $stops));
+
+        } catch (RequestException $e) {
             return view('pages.trains', array('error' => true));
-
-
-        $body = json_decode($res->getBody());
-        $vehicleinfo = $body->vehicleinfo;
-        $stops = $body->stops;
-
-        return view('pages.trains', array('error' => false, 'vehicleinfo' => $vehicleinfo, 'stops' => $stops));
-
+        }
     }
 
     public function show()
