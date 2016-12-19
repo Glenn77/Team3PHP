@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Station;
 use App\StationWithAddress;
+use App\Log;
+
 use App\Traits\ExceptionTrait;
 use App\Traits\ReturnTrait;
 use App\Traits\AddressTrait;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class StationController extends Controller
@@ -92,5 +95,19 @@ class StationController extends Controller
             return $this->beautifyReturn(404);
         }
         return $this->beautifyReturn(400);
+    }
+
+    public function stationsAutocomplete()
+    {
+        $stationNames = [];
+        $path = storage_path('xmls/stations.xml');
+
+        $stationsXMLElement = simplexml_load_file($path);
+
+        foreach ($stationsXMLElement->Station as $station) {
+            $stationNames[] = (string)$station->Name;
+        }
+
+        return $stationNames;
     }
 }

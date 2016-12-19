@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,13 +21,6 @@ Route::post('/stations', 'StationsViewController@getStation');
 Route::get('/trains', 'TrainsViewController@show');
 Route::post('/trains', 'TrainsViewController@getTrain');
 
-
-//Route::get('/', function () {
-//    return view('pages.index');
-//});
-
-
-/*Auth::routes();
-
-    Route::get('/home', 'HomeController@index');*/
-//});
+Route::get('/cron-jobs', function() {
+    Artisan::call('indexStations:xml');
+});

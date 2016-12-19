@@ -179,3 +179,8 @@ Route::group(['prefix' => 'lostObject', 'middleware' => 'auth:api'], function()
     Route::Put('update/{id}', 'LostObjectController@update');
 //    Route::Delete('delete/{id}', 'LostObjectController@delete');
 });
+
+Route::group(['prefix' => 'mixed'], function()
+{
+    Route::post('/stations', 'StationController@stationsAutocomplete');
+});

@@ -19,7 +19,7 @@ trait AddressTrait
             && $request->Number
             && $request->City
             && $request->ZipCode
-            && $request->Coordinates
+            && isset($request->Coordinates)
         ) {
             $address = new Address();
             $address->Street = $request->Street;

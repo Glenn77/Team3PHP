@@ -123,6 +123,12 @@ footer {
   margin: 0 auto;
 }
 
+ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+  li:nth-child(n+6) {
+    display: none;
+  }
+}
+
 .search-form {
 
   .row {

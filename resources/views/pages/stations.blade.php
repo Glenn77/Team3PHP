@@ -13,7 +13,7 @@
                 {{ Form::token() }}
                 <div class="row">
                     <div class="col-md-2">{{ Form::label('Name', 'Station') }}</div>
-                    <div class="col-md-8">{{ Form::text('Name', 'Groenendael', ['required' => true]) }}</div>
+                    <div class="col-md-8">{{ Form::text('Name', 'Groenendael', ['required' => true, 'class' => 'station-autocomplete']) }}</div>
                 </div>
                 <div class="row">
                     <div class="col-md-2">{{ Form::label('Date', 'Datum') }}</div>

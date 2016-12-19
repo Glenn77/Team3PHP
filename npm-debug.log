@@ -1,0 +1,616 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly mapToRegistry name bootstrap-sass
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'bootstrap-sass',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'bootstrap-sass',
+7 silly mapToRegistry   name: 'bootstrap-sass',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/bootstrap-sass
+9 silly mapToRegistry name gulp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'gulp',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'gulp',
+12 silly mapToRegistry   name: 'gulp',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/gulp
+14 silly mapToRegistry name jquery
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'jquery',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'jquery',
+17 silly mapToRegistry   name: 'jquery',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/jquery
+19 silly mapToRegistry name laravel-elixir
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'laravel-elixir',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   escapedName: 'laravel-elixir',
+22 silly mapToRegistry   name: 'laravel-elixir',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/laravel-elixir
+24 silly mapToRegistry name laravel-elixir-vue-2
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'laravel-elixir-vue-2',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   escapedName: 'laravel-elixir-vue-2',
+27 silly mapToRegistry   name: 'laravel-elixir-vue-2',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/laravel-elixir-vue-2
+29 silly mapToRegistry name laravel-elixir-webpack-official
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'laravel-elixir-webpack-official',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   escapedName: 'laravel-elixir-webpack-official',
+32 silly mapToRegistry   name: 'laravel-elixir-webpack-official',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/laravel-elixir-webpack-official
+34 silly mapToRegistry name lodash
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'lodash',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   escapedName: 'lodash',
+37 silly mapToRegistry   name: 'lodash',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/lodash
+39 silly mapToRegistry name vue
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'vue',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   escapedName: 'vue',
+42 silly mapToRegistry   name: 'vue',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/vue
+44 silly mapToRegistry name vue-resource
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'vue-resource',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'vue-resource',
+47 silly mapToRegistry   name: 'vue-resource',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/vue-resource
+49 silly mapToRegistry name jquery-ui-bundle
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry data Result {
+52 silly mapToRegistry   raw: 'jquery-ui-bundle',
+52 silly mapToRegistry   scope: null,
+52 silly mapToRegistry   escapedName: 'jquery-ui-bundle',
+52 silly mapToRegistry   name: 'jquery-ui-bundle',
+52 silly mapToRegistry   rawSpec: '',
+52 silly mapToRegistry   spec: 'latest',
+52 silly mapToRegistry   type: 'tag' }
+53 silly mapToRegistry uri https://registry.npmjs.org/jquery-ui-bundle
+54 verbose request uri https://registry.npmjs.org/bootstrap-sass
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 20:10:49
+57 verbose request id 615d1d3ff6b7e340
+58 verbose etag W/"582c1c44-7082"
+59 verbose lastModified Wed, 16 Nov 2016 08:43:48 GMT
+60 http request GET https://registry.npmjs.org/bootstrap-sass
+61 verbose request uri https://registry.npmjs.org/gulp
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 20:10:49
+64 verbose etag W/"582f3862-1c866"
+65 verbose lastModified Fri, 18 Nov 2016 17:20:34 GMT
+66 http request GET https://registry.npmjs.org/gulp
+67 verbose request uri https://registry.npmjs.org/jquery
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 20:10:49
+70 verbose etag W/"582f2bc1-147ce"
+71 verbose lastModified Fri, 18 Nov 2016 16:26:41 GMT
+72 http request GET https://registry.npmjs.org/jquery
+73 verbose request uri https://registry.npmjs.org/laravel-elixir-vue-2
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 20:10:49
+76 verbose etag W/"57bc15d1-1178"
+77 verbose lastModified Tue, 23 Aug 2016 09:22:25 GMT
+78 http request GET https://registry.npmjs.org/laravel-elixir-vue-2
+79 verbose request uri https://registry.npmjs.org/laravel-elixir-webpack-official
+80 verbose request no auth needed
+81 info attempt registry request try #1 at 20:10:49
+82 verbose etag W/"5810a219-3e52"
+83 verbose lastModified Wed, 26 Oct 2016 12:31:21 GMT
+84 http request GET https://registry.npmjs.org/laravel-elixir-webpack-official
+85 verbose request uri https://registry.npmjs.org/jquery-ui-bundle
+86 verbose request no auth needed
+87 info attempt registry request try #1 at 20:10:49
+88 verbose etag W/"5599e75b-645"
+89 verbose lastModified Mon, 06 Jul 2015 02:26:35 GMT
+90 http request GET https://registry.npmjs.org/jquery-ui-bundle
+91 verbose request uri https://registry.npmjs.org/laravel-elixir
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 20:10:49
+94 verbose etag W/"581f59f2-4ff5e"
+95 verbose lastModified Sun, 06 Nov 2016 16:27:30 GMT
+96 http request GET https://registry.npmjs.org/laravel-elixir
+97 verbose request uri https://registry.npmjs.org/vue
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 20:10:49
+100 verbose etag W/"582daff8-628a6"
+101 verbose lastModified Thu, 17 Nov 2016 13:26:16 GMT
+102 http request GET https://registry.npmjs.org/vue
+103 verbose request uri https://registry.npmjs.org/lodash
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 20:10:49
+106 verbose etag W/"582e2e12-27f92"
+107 verbose lastModified Thu, 17 Nov 2016 22:24:18 GMT
+108 http request GET https://registry.npmjs.org/lodash
+109 verbose request uri https://registry.npmjs.org/vue-resource
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 20:10:49
+112 verbose etag W/"582315d8-b414"
+113 verbose lastModified Wed, 09 Nov 2016 12:26:00 GMT
+114 http request GET https://registry.npmjs.org/vue-resource
+115 http 200 https://registry.npmjs.org/laravel-elixir-vue-2
+116 verbose headers { server: 'nginx/1.10.1',
+116 verbose headers   'content-type': 'application/json',
+116 verbose headers   'last-modified': 'Wed, 30 Nov 2016 16:16:11 GMT',
+116 verbose headers   etag: 'W/"583efb4b-1c65"',
+116 verbose headers   'content-encoding': 'gzip',
+116 verbose headers   'cache-control': 'max-age=300',
+116 verbose headers   'content-length': '1932',
+116 verbose headers   'accept-ranges': 'bytes',
+116 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+116 verbose headers   via: '1.1 varnish',
+116 verbose headers   age: '139',
+116 verbose headers   connection: 'keep-alive',
+116 verbose headers   'x-served-by': 'cache-lcy1143-LCY',
+116 verbose headers   'x-cache': 'HIT',
+116 verbose headers   'x-cache-hits': '1',
+116 verbose headers   'x-timer': 'S1481656252.348809,VS0,VE0',
+116 verbose headers   vary: 'Accept-Encoding' }
+117 silly get cb [ 200,
+117 silly get   { server: 'nginx/1.10.1',
+117 silly get     'content-type': 'application/json',
+117 silly get     'last-modified': 'Wed, 30 Nov 2016 16:16:11 GMT',
+117 silly get     etag: 'W/"583efb4b-1c65"',
+117 silly get     'content-encoding': 'gzip',
+117 silly get     'cache-control': 'max-age=300',
+117 silly get     'content-length': '1932',
+117 silly get     'accept-ranges': 'bytes',
+117 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     age: '139',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-lcy1143-LCY',
+117 silly get     'x-cache': 'HIT',
+117 silly get     'x-cache-hits': '1',
+117 silly get     'x-timer': 'S1481656252.348809,VS0,VE0',
+117 silly get     vary: 'Accept-Encoding' } ]
+118 verbose get saving laravel-elixir-vue-2 to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\laravel-elixir-vue-2\.cache.json
+119 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+120 http 200 https://registry.npmjs.org/bootstrap-sass
+121 verbose headers { server: 'nginx/1.10.1',
+121 verbose headers   'content-type': 'application/json',
+121 verbose headers   'last-modified': 'Tue, 13 Dec 2016 04:49:46 GMT',
+121 verbose headers   etag: 'W/"584f7dea-7083"',
+121 verbose headers   'content-encoding': 'gzip',
+121 verbose headers   'cache-control': 'max-age=300',
+121 verbose headers   'content-length': '7435',
+121 verbose headers   'accept-ranges': 'bytes',
+121 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+121 verbose headers   via: '1.1 varnish',
+121 verbose headers   age: '269',
+121 verbose headers   connection: 'keep-alive',
+121 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+121 verbose headers   'x-cache': 'HIT',
+121 verbose headers   'x-cache-hits': '1',
+121 verbose headers   'x-timer': 'S1481656252.345773,VS0,VE0',
+121 verbose headers   vary: 'Accept-Encoding' }
+122 silly get cb [ 200,
+122 silly get   { server: 'nginx/1.10.1',
+122 silly get     'content-type': 'application/json',
+122 silly get     'last-modified': 'Tue, 13 Dec 2016 04:49:46 GMT',
+122 silly get     etag: 'W/"584f7dea-7083"',
+122 silly get     'content-encoding': 'gzip',
+122 silly get     'cache-control': 'max-age=300',
+122 silly get     'content-length': '7435',
+122 silly get     'accept-ranges': 'bytes',
+122 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+122 silly get     via: '1.1 varnish',
+122 silly get     age: '269',
+122 silly get     connection: 'keep-alive',
+122 silly get     'x-served-by': 'cache-lcy1120-LCY',
+122 silly get     'x-cache': 'HIT',
+122 silly get     'x-cache-hits': '1',
+122 silly get     'x-timer': 'S1481656252.345773,VS0,VE0',
+122 silly get     vary: 'Accept-Encoding' } ]
+123 verbose get saving bootstrap-sass to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\bootstrap-sass\.cache.json
+124 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir already in flight; waiting
+125 http 200 https://registry.npmjs.org/laravel-elixir-webpack-official
+126 verbose headers { server: 'nginx/1.10.1',
+126 verbose headers   'content-type': 'application/json',
+126 verbose headers   'last-modified': 'Thu, 01 Dec 2016 16:17:53 GMT',
+126 verbose headers   etag: 'W/"58404d31-449f"',
+126 verbose headers   'content-encoding': 'gzip',
+126 verbose headers   'cache-control': 'max-age=300',
+126 verbose headers   'content-length': '2985',
+126 verbose headers   'accept-ranges': 'bytes',
+126 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+126 verbose headers   via: '1.1 varnish',
+126 verbose headers   age: '239',
+126 verbose headers   connection: 'keep-alive',
+126 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+126 verbose headers   'x-cache': 'HIT',
+126 verbose headers   'x-cache-hits': '1',
+126 verbose headers   'x-timer': 'S1481656252.361088,VS0,VE0',
+126 verbose headers   vary: 'Accept-Encoding' }
+127 silly get cb [ 200,
+127 silly get   { server: 'nginx/1.10.1',
+127 silly get     'content-type': 'application/json',
+127 silly get     'last-modified': 'Thu, 01 Dec 2016 16:17:53 GMT',
+127 silly get     etag: 'W/"58404d31-449f"',
+127 silly get     'content-encoding': 'gzip',
+127 silly get     'cache-control': 'max-age=300',
+127 silly get     'content-length': '2985',
+127 silly get     'accept-ranges': 'bytes',
+127 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+127 silly get     via: '1.1 varnish',
+127 silly get     age: '239',
+127 silly get     connection: 'keep-alive',
+127 silly get     'x-served-by': 'cache-lcy1125-LCY',
+127 silly get     'x-cache': 'HIT',
+127 silly get     'x-cache-hits': '1',
+127 silly get     'x-timer': 'S1481656252.361088,VS0,VE0',
+127 silly get     vary: 'Accept-Encoding' } ]
+128 verbose get saving laravel-elixir-webpack-official to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\laravel-elixir-webpack-official\.cache.json
+129 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+130 http 200 https://registry.npmjs.org/vue-resource
+131 verbose headers { server: 'nginx/1.10.1',
+131 verbose headers   'content-type': 'application/json',
+131 verbose headers   'last-modified': 'Sun, 11 Dec 2016 08:03:56 GMT',
+131 verbose headers   etag: 'W/"584d086c-b437"',
+131 verbose headers   'content-encoding': 'gzip',
+131 verbose headers   'cache-control': 'max-age=300',
+131 verbose headers   'content-length': '5893',
+131 verbose headers   'accept-ranges': 'bytes',
+131 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+131 verbose headers   via: '1.1 varnish',
+131 verbose headers   age: '156',
+131 verbose headers   connection: 'keep-alive',
+131 verbose headers   'x-served-by': 'cache-lcy1144-LCY',
+131 verbose headers   'x-cache': 'HIT',
+131 verbose headers   'x-cache-hits': '1',
+131 verbose headers   'x-timer': 'S1481656252.360179,VS0,VE0',
+131 verbose headers   vary: 'Accept-Encoding' }
+132 silly get cb [ 200,
+132 silly get   { server: 'nginx/1.10.1',
+132 silly get     'content-type': 'application/json',
+132 silly get     'last-modified': 'Sun, 11 Dec 2016 08:03:56 GMT',
+132 silly get     etag: 'W/"584d086c-b437"',
+132 silly get     'content-encoding': 'gzip',
+132 silly get     'cache-control': 'max-age=300',
+132 silly get     'content-length': '5893',
+132 silly get     'accept-ranges': 'bytes',
+132 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+132 silly get     via: '1.1 varnish',
+132 silly get     age: '156',
+132 silly get     connection: 'keep-alive',
+132 silly get     'x-served-by': 'cache-lcy1144-LCY',
+132 silly get     'x-cache': 'HIT',
+132 silly get     'x-cache-hits': '1',
+132 silly get     'x-timer': 'S1481656252.360179,VS0,VE0',
+132 silly get     vary: 'Accept-Encoding' } ]
+133 verbose get saving vue-resource to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\vue-resource\.cache.json
+134 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+135 http 304 https://registry.npmjs.org/jquery-ui-bundle
+136 verbose headers { date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+136 verbose headers   via: '1.1 varnish',
+136 verbose headers   'cache-control': 'max-age=300',
+136 verbose headers   etag: 'W/"5599e75b-645"',
+136 verbose headers   age: '0',
+136 verbose headers   connection: 'keep-alive',
+136 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
+136 verbose headers   'x-cache': 'HIT',
+136 verbose headers   'x-cache-hits': '1',
+136 verbose headers   'x-timer': 'S1481656252.353172,VS0,VE24',
+136 verbose headers   vary: 'Accept-Encoding' }
+137 silly get cb [ 304,
+137 silly get   { date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+137 silly get     via: '1.1 varnish',
+137 silly get     'cache-control': 'max-age=300',
+137 silly get     etag: 'W/"5599e75b-645"',
+137 silly get     age: '0',
+137 silly get     connection: 'keep-alive',
+137 silly get     'x-served-by': 'cache-lcy1131-LCY',
+137 silly get     'x-cache': 'HIT',
+137 silly get     'x-cache-hits': '1',
+137 silly get     'x-timer': 'S1481656252.353172,VS0,VE24',
+137 silly get     vary: 'Accept-Encoding' } ]
+138 verbose etag https://registry.npmjs.org/jquery-ui-bundle from cache
+139 verbose get saving jquery-ui-bundle to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\jquery-ui-bundle\.cache.json
+140 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+141 http 200 https://registry.npmjs.org/jquery
+142 verbose headers { server: 'nginx/1.10.1',
+142 verbose headers   'content-type': 'application/json',
+142 verbose headers   'last-modified': 'Tue, 13 Dec 2016 04:50:48 GMT',
+142 verbose headers   etag: 'W/"584f7e28-14804"',
+142 verbose headers   'content-encoding': 'gzip',
+142 verbose headers   'cache-control': 'max-age=300',
+142 verbose headers   'content-length': '9896',
+142 verbose headers   'accept-ranges': 'bytes',
+142 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+142 verbose headers   via: '1.1 varnish',
+142 verbose headers   age: '5',
+142 verbose headers   connection: 'keep-alive',
+142 verbose headers   'x-served-by': 'cache-lcy1141-LCY',
+142 verbose headers   'x-cache': 'HIT',
+142 verbose headers   'x-cache-hits': '1',
+142 verbose headers   'x-timer': 'S1481656252.345899,VS0,VE0',
+142 verbose headers   vary: 'Accept-Encoding' }
+143 silly get cb [ 200,
+143 silly get   { server: 'nginx/1.10.1',
+143 silly get     'content-type': 'application/json',
+143 silly get     'last-modified': 'Tue, 13 Dec 2016 04:50:48 GMT',
+143 silly get     etag: 'W/"584f7e28-14804"',
+143 silly get     'content-encoding': 'gzip',
+143 silly get     'cache-control': 'max-age=300',
+143 silly get     'content-length': '9896',
+143 silly get     'accept-ranges': 'bytes',
+143 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     age: '5',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-lcy1141-LCY',
+143 silly get     'x-cache': 'HIT',
+143 silly get     'x-cache-hits': '1',
+143 silly get     'x-timer': 'S1481656252.345899,VS0,VE0',
+143 silly get     vary: 'Accept-Encoding' } ]
+144 verbose get saving jquery to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\jquery\.cache.json
+145 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+146 http 200 https://registry.npmjs.org/gulp
+147 verbose headers { server: 'nginx/1.10.1',
+147 verbose headers   'content-type': 'application/json',
+147 verbose headers   'last-modified': 'Tue, 13 Dec 2016 04:50:26 GMT',
+147 verbose headers   etag: 'W/"584f7e12-1c9fa"',
+147 verbose headers   'content-encoding': 'gzip',
+147 verbose headers   'cache-control': 'max-age=300',
+147 verbose headers   'content-length': '16703',
+147 verbose headers   'accept-ranges': 'bytes',
+147 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+147 verbose headers   via: '1.1 varnish',
+147 verbose headers   age: '24',
+147 verbose headers   connection: 'keep-alive',
+147 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+147 verbose headers   'x-cache': 'HIT',
+147 verbose headers   'x-cache-hits': '2',
+147 verbose headers   'x-timer': 'S1481656252.340594,VS0,VE0',
+147 verbose headers   vary: 'Accept-Encoding' }
+148 silly get cb [ 200,
+148 silly get   { server: 'nginx/1.10.1',
+148 silly get     'content-type': 'application/json',
+148 silly get     'last-modified': 'Tue, 13 Dec 2016 04:50:26 GMT',
+148 silly get     etag: 'W/"584f7e12-1c9fa"',
+148 silly get     'content-encoding': 'gzip',
+148 silly get     'cache-control': 'max-age=300',
+148 silly get     'content-length': '16703',
+148 silly get     'accept-ranges': 'bytes',
+148 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+148 silly get     via: '1.1 varnish',
+148 silly get     age: '24',
+148 silly get     connection: 'keep-alive',
+148 silly get     'x-served-by': 'cache-lcy1123-LCY',
+148 silly get     'x-cache': 'HIT',
+148 silly get     'x-cache-hits': '2',
+148 silly get     'x-timer': 'S1481656252.340594,VS0,VE0',
+148 silly get     vary: 'Accept-Encoding' } ]
+149 verbose get saving gulp to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\gulp\.cache.json
+150 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+151 http 200 https://registry.npmjs.org/lodash
+152 verbose headers { server: 'nginx/1.10.1',
+152 verbose headers   'content-type': 'application/json',
+152 verbose headers   'last-modified': 'Tue, 13 Dec 2016 04:50:57 GMT',
+152 verbose headers   etag: 'W/"584f7e31-280d7"',
+152 verbose headers   'content-encoding': 'gzip',
+152 verbose headers   'cache-control': 'max-age=300',
+152 verbose headers   'content-length': '16377',
+152 verbose headers   'accept-ranges': 'bytes',
+152 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+152 verbose headers   via: '1.1 varnish',
+152 verbose headers   age: '188',
+152 verbose headers   connection: 'keep-alive',
+152 verbose headers   'x-served-by': 'cache-lcy1143-LCY',
+152 verbose headers   'x-cache': 'HIT',
+152 verbose headers   'x-cache-hits': '12',
+152 verbose headers   'x-timer': 'S1481656252.353043,VS0,VE0',
+152 verbose headers   vary: 'Accept-Encoding' }
+153 silly get cb [ 200,
+153 silly get   { server: 'nginx/1.10.1',
+153 silly get     'content-type': 'application/json',
+153 silly get     'last-modified': 'Tue, 13 Dec 2016 04:50:57 GMT',
+153 silly get     etag: 'W/"584f7e31-280d7"',
+153 silly get     'content-encoding': 'gzip',
+153 silly get     'cache-control': 'max-age=300',
+153 silly get     'content-length': '16377',
+153 silly get     'accept-ranges': 'bytes',
+153 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+153 silly get     via: '1.1 varnish',
+153 silly get     age: '188',
+153 silly get     connection: 'keep-alive',
+153 silly get     'x-served-by': 'cache-lcy1143-LCY',
+153 silly get     'x-cache': 'HIT',
+153 silly get     'x-cache-hits': '12',
+153 silly get     'x-timer': 'S1481656252.353043,VS0,VE0',
+153 silly get     vary: 'Accept-Encoding' } ]
+154 verbose get saving lodash to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\lodash\.cache.json
+155 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+156 silly cache add args [ 'jquery-ui-bundle', '^1.12.0-rc.0' ]
+157 verbose cache add spec jquery-ui-bundle@^1.12.0-rc.0
+158 silly cache add parsed spec Result {
+158 silly cache add   raw: 'jquery-ui-bundle@^1.12.0-rc.0',
+158 silly cache add   scope: null,
+158 silly cache add   escapedName: 'jquery-ui-bundle',
+158 silly cache add   name: 'jquery-ui-bundle',
+158 silly cache add   rawSpec: '^1.12.0-rc.0',
+158 silly cache add   spec: '>=1.12.0-rc.0 <2.0.0',
+158 silly cache add   type: 'range' }
+159 silly addNamed jquery-ui-bundle@>=1.12.0-rc.0 <2.0.0
+160 verbose addNamed ">=1.12.0-rc.0 <2.0.0" is a valid semver range for jquery-ui-bundle
+161 silly addNameRange { name: 'jquery-ui-bundle',
+161 silly addNameRange   range: '>=1.12.0-rc.0 <2.0.0',
+161 silly addNameRange   hasData: false }
+162 silly mapToRegistry name jquery-ui-bundle
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry data Result {
+165 silly mapToRegistry   raw: 'jquery-ui-bundle',
+165 silly mapToRegistry   scope: null,
+165 silly mapToRegistry   escapedName: 'jquery-ui-bundle',
+165 silly mapToRegistry   name: 'jquery-ui-bundle',
+165 silly mapToRegistry   rawSpec: '',
+165 silly mapToRegistry   spec: 'latest',
+165 silly mapToRegistry   type: 'tag' }
+166 silly mapToRegistry uri https://registry.npmjs.org/jquery-ui-bundle
+167 verbose addNameRange registry:https://registry.npmjs.org/jquery-ui-bundle not in flight; fetching
+168 http 200 https://registry.npmjs.org/laravel-elixir
+169 verbose headers { server: 'nginx/1.10.1',
+169 verbose headers   'content-type': 'application/json',
+169 verbose headers   'last-modified': 'Tue, 22 Nov 2016 15:59:33 GMT',
+169 verbose headers   etag: 'W/"58346b65-50802"',
+169 verbose headers   'content-encoding': 'gzip',
+169 verbose headers   'cache-control': 'max-age=300',
+169 verbose headers   'content-length': '20391',
+169 verbose headers   'accept-ranges': 'bytes',
+169 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+169 verbose headers   via: '1.1 varnish',
+169 verbose headers   age: '239',
+169 verbose headers   connection: 'keep-alive',
+169 verbose headers   'x-served-by': 'cache-lcy1141-LCY',
+169 verbose headers   'x-cache': 'HIT',
+169 verbose headers   'x-cache-hits': '1',
+169 verbose headers   'x-timer': 'S1481656252.344108,VS0,VE0',
+169 verbose headers   vary: 'Accept-Encoding' }
+170 silly get cb [ 200,
+170 silly get   { server: 'nginx/1.10.1',
+170 silly get     'content-type': 'application/json',
+170 silly get     'last-modified': 'Tue, 22 Nov 2016 15:59:33 GMT',
+170 silly get     etag: 'W/"58346b65-50802"',
+170 silly get     'content-encoding': 'gzip',
+170 silly get     'cache-control': 'max-age=300',
+170 silly get     'content-length': '20391',
+170 silly get     'accept-ranges': 'bytes',
+170 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     age: '239',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-lcy1141-LCY',
+170 silly get     'x-cache': 'HIT',
+170 silly get     'x-cache-hits': '1',
+170 silly get     'x-timer': 'S1481656252.344108,VS0,VE0',
+170 silly get     vary: 'Accept-Encoding' } ]
+171 verbose get saving laravel-elixir to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\laravel-elixir\.cache.json
+172 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+173 verbose get https://registry.npmjs.org/jquery-ui-bundle not expired, no request
+174 silly addNameRange number 2 { name: 'jquery-ui-bundle',
+174 silly addNameRange   range: '>=1.12.0-rc.0 <2.0.0',
+174 silly addNameRange   hasData: true }
+175 silly addNameRange versions [ 'jquery-ui-bundle', [ '1.11.4' ] ]
+176 http 200 https://registry.npmjs.org/vue
+177 verbose headers { server: 'nginx/1.10.1',
+177 verbose headers   'content-type': 'application/json',
+177 verbose headers   'last-modified': 'Tue, 13 Dec 2016 17:22:37 GMT',
+177 verbose headers   etag: 'W/"58502e5d-6b2a2"',
+177 verbose headers   'content-encoding': 'gzip',
+177 verbose headers   'cache-control': 'max-age=300',
+177 verbose headers   'content-length': '26872',
+177 verbose headers   'accept-ranges': 'bytes',
+177 verbose headers   date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+177 verbose headers   via: '1.1 varnish',
+177 verbose headers   age: '139',
+177 verbose headers   connection: 'keep-alive',
+177 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+177 verbose headers   'x-cache': 'HIT',
+177 verbose headers   'x-cache-hits': '1',
+177 verbose headers   'x-timer': 'S1481656252.360461,VS0,VE0',
+177 verbose headers   vary: 'Accept-Encoding' }
+178 silly get cb [ 200,
+178 silly get   { server: 'nginx/1.10.1',
+178 silly get     'content-type': 'application/json',
+178 silly get     'last-modified': 'Tue, 13 Dec 2016 17:22:37 GMT',
+178 silly get     etag: 'W/"58502e5d-6b2a2"',
+178 silly get     'content-encoding': 'gzip',
+178 silly get     'cache-control': 'max-age=300',
+178 silly get     'content-length': '26872',
+178 silly get     'accept-ranges': 'bytes',
+178 silly get     date: 'Tue, 13 Dec 2016 19:10:52 GMT',
+178 silly get     via: '1.1 varnish',
+178 silly get     age: '139',
+178 silly get     connection: 'keep-alive',
+178 silly get     'x-served-by': 'cache-lcy1128-LCY',
+178 silly get     'x-cache': 'HIT',
+178 silly get     'x-cache-hits': '1',
+178 silly get     'x-timer': 'S1481656252.360461,VS0,VE0',
+178 silly get     vary: 'Accept-Encoding' } ]
+179 verbose get saving vue to C:\Users\Ludovic\AppData\Roaming\npm-cache\registry.npmjs.org\vue\.cache.json
+180 verbose correctMkdir C:\Users\Ludovic\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+181 verbose stack Error: No compatible version found: jquery-ui-bundle@'>=1.12.0-rc.0 <2.0.0'
+181 verbose stack Valid install targets:
+181 verbose stack 1.11.4
+181 verbose stack
+181 verbose stack     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:292:12)
+181 verbose stack     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:270:19)
+181 verbose stack     at setData (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:242:5)
+181 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+181 verbose stack     at f (C:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:25:25)
+181 verbose stack     at fixName (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:30:5)
+181 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:20:8
+181 verbose stack     at CachingRegistryClient.get_ (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:126:16)
+181 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:91:14
+181 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+182 verbose cwd D:\xampp\htdocs\laravel
+183 error Windows_NT 10.0.14393
+184 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "update"
+185 error node v6.9.1
+186 error npm  v3.10.8
+187 error code ETARGET
+188 error notarget No compatible version found: jquery-ui-bundle@'>=1.12.0-rc.0 <2.0.0'
+188 error notarget Valid install targets:
+188 error notarget 1.11.4
+189 error notarget This is most likely not a problem with npm itself.
+189 error notarget In most cases you or one of your dependencies are requesting
+189 error notarget a package version that doesn't exist.
+190 verbose exit [ 1, true ]
