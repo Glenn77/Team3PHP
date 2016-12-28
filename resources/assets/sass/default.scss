@@ -4,7 +4,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 nav {
@@ -245,7 +244,7 @@ ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
 
     &-info {
       margin-top: 1em;
-      color: $color-search-info;
+      color: $text-color;
 
       .extra-info {
         color: $color-search-info-extra;

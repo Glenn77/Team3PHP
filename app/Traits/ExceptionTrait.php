@@ -12,14 +12,23 @@ trait ExceptionTrait
 {
     public function beautifyException(\Exception $e)
     {
-        $errorInfo = ((array) $e)['errorInfo'];
-        $errorInfo['SQLSTATE'] = $errorInfo[0];
-        $errorInfo['Violation'] = $errorInfo[1];
-        $errorInfo['Message'] = $errorInfo[2];
+        try
+        {
+            $errorInfo = ((array) $e)['errorInfo'];
 
-        unset($errorInfo[0]);
-        unset($errorInfo[1]);
-        unset($errorInfo[2]);
+            $errorInfo['SQLSTATE'] = $errorInfo[0];
+            $errorInfo['Violation'] = $errorInfo[1];
+            $errorInfo['Message'] = $errorInfo[2];
+
+            unset($errorInfo[0]);
+            unset($errorInfo[1]);
+            unset($errorInfo[2]);
+        }
+        catch (\Exception $e)
+        {
+            $errorInfo['Violation'] = $e->getFile() . ' on line ' . $e->getLine();
+            $errorInfo['Message'] = $e->getMessage();
+        }
 
         return $errorInfo;
     }

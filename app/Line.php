@@ -10,10 +10,11 @@ class Line extends Model
 
     protected $primaryKey = 'LineID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $hidden = ['RouteID'];
     protected $guarded = ['LineID'];
-    protected $fillable = ['RouteID', 'TrainType'];
+    protected $fillable = ['RouteID', 'TrainType', 'LastUpdated'];
 
     protected $appends = ['Route'];
 

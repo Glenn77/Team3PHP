@@ -2,7 +2,7 @@
 @section('title', 'NMBSTeam WebApp')
 @section('content')
 
-    <div class="header_title row">
+    <div class="header_title">
         <h1>Trains</h1>
     </div>
 

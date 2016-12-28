@@ -49,8 +49,11 @@ class StationCommand extends Command
 
         $bar = $this->output->createProgressBar(count($stations));
 
+        $timestamp = \Carbon\Carbon::now()->timestamp;
+
         $log = new Log();
-        $log->CreatedAt = \Carbon\Carbon::now()->timestamp;
+        $log->LogID = $timestamp;
+        $log->CreatedAt = $timestamp;
         $log->LogOrigin = "indexStations:xml";
 
         try

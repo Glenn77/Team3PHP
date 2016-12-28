@@ -10,10 +10,11 @@ class RailCard extends Model
 
     protected $primaryKey = 'CardID';
     public $timestamps = false;
+    public $incrementing = false;
 
 
     protected $guarded = ['CardID'];
-
+    protected $fillable = ['LastUpdated'];
     protected $appends = ['Subscriptions'];
 
     public function getSubscriptionsAttribute()

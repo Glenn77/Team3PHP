@@ -10,10 +10,11 @@ class Customer extends Model
 
     protected $primaryKey = 'CustomerID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $hidden = ['AddressID', 'RailCardID'];
     protected $guarded = ['CustomerID'];
-    protected $fillable = ['AddressID', 'RailCardID', 'FirstName', 'LastName', 'BirthDate', 'Email'];
+    protected $fillable = ['AddressID', 'RailCardID', 'FirstName', 'LastName', 'BirthDate', 'Email', 'LastUpdated'];
 
     protected $appends = ['Address', 'RailCard'];
 

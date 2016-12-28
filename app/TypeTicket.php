@@ -10,9 +10,9 @@ class TypeTicket extends Model
 
     protected $primaryKey = 'TypeTicketID';
     public $timestamps = false;
-
+    public $incrementing = false;
 
     protected $guarded = ['TypeTicketID'];
-    protected $fillable = ['Name', 'Price', 'ComfortClass'];
+    protected $fillable = ['Name', 'Price', 'ComfortClass', 'LastUpdated'];
 
 }

@@ -9,24 +9,31 @@
 namespace App\Traits;
 
 use App\Address;
+use GuzzleHttp\Message\Response;
 use Illuminate\Http\Request;
 
 trait AddressTrait
 {
-    public function createNewAdress(Request $request)
+    public function createNewAddress(Request $request)
     {
-        if ($request->Street
+
+
+        if ($request->AddressID
+            && $request->Street
             && $request->Number
             && $request->City
             && $request->ZipCode
             && isset($request->Coordinates)
+            && $request->LastUpdated
         ) {
             $address = new Address();
+            $address->AddressID = $request->AddressID;
             $address->Street = $request->Street;
             $address->Number = $request->Number;
             $address->City = $request->City;
             $address->ZipCode = $request->ZipCode;
             $address->Coordinates = $request->Coordinates;
+            $address->LastUpdated = $request->LastUpdated;
 
             if ($address->save())
                 return $address->AddressID;

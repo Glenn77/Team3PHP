@@ -10,8 +10,9 @@ class Station extends Model
 
     protected $primaryKey = 'StationID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $guarded = ['StationID'];
-    protected $fillable = ['AddressID', 'Name'];
+    protected $fillable = ['Name', 'CoX', 'CoY', 'LastUpdated'];
 
 }

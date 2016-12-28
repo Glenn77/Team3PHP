@@ -10,8 +10,8 @@ class Discount extends Model
 
     protected $primaryKey = 'DiscountID';
     public $timestamps = false;
-
+    public $incrementing = false;
 
     protected $guarded = ['DiscountID'];
-    protected $fillable = ['Name', 'Amount'];
+    protected $fillable = ['Name', 'Amount', 'LastUpdated'];
 }

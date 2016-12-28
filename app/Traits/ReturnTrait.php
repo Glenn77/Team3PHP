@@ -28,6 +28,9 @@ trait ReturnTrait
             case 406:
                 return $this->beautifyReturnMessage($code, $this->className . ' Not Acceptable', (isset($extra['Error'])) ? $extra['Error'] : '');
                 break;
+            case 460:
+                return $this->beautifyReturnMessage($code, $this->className . ' Request Format Error', (isset($extra['Error'])) ? $extra['Error'] : '');
+                break;
             default:
                 return $this->beautifyReturnMessage($code, $this->className . ' Unspecified Error', (isset($extra['Error'])) ? $extra['Error'] : '');
                 break;

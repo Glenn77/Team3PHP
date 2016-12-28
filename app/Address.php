@@ -10,9 +10,10 @@ class Address extends Model
 
     protected $primaryKey = 'AddressID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $hidden = [];
     protected $guarded = ['AddressID'];
-    protected $fillable = ['Street', 'Number', 'City', 'ZipCode', 'Coordinates'];
+    protected $fillable = ['Street', 'Number', 'City', 'ZipCode', 'Coordinates', 'LastUpdated'];
 
 }

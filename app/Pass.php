@@ -10,10 +10,11 @@ class Pass extends Model
 
     protected $primaryKey = 'PassID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $hidden = ['TypePassID'];
     protected $guarded = ['PassID'];
-    protected $fillable = ['TypePassID', 'Date', 'StartDate', 'ComfortClass'];
+    protected $fillable = ['TypePassID', 'Date', 'StartDate', 'ComfortClass', 'LastUpdated'];
 
     protected $appends = ['TypePass'];
 

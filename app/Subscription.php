@@ -10,10 +10,11 @@ class Subscription extends Model
 
     protected $primaryKey = 'SubscriptionID';
     public $timestamps = false;
+    public $incrementing = false;
 
     protected $hidden = ['RouteID', 'DiscountID'];
     protected $guarded = ['SubscriptionID'];
-    protected $fillable = ['RailcardID', 'RouteID', 'DiscountID', 'ValidFrom', 'ValidUntil'];
+    protected $fillable = ['RailcardID', 'RouteID', 'DiscountID', 'ValidFrom', 'ValidUntil', 'LastUpdated'];
 
     protected $appends = ['Route', 'Discount'];
 
